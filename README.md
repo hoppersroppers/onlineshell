@@ -1,12 +1,8 @@
 ### **browser linux:** _run Linux in your browser_
 
-### **Now on [codeberg](https://codeberg.org/darin755/browser-linux)**
-
-## [LIVE DEMO](https://darin755.github.io/browser-linux/)
+## Forked from https://darin755.github.io/browser-linux/
 
 <img src="docs/images/screenshot.png">
-
-*star it if you like it*
 
 ### About
 
