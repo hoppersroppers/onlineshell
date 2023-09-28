@@ -1,4 +1,5 @@
-<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head>
+<html>
+  <head>
 <title>Roppers Shell - Virtual x86</title>
   <link rel="icon" href="https://raw.githubusercontent.com/hoppersroppers/hoppersroppers.github.io/master/_layouts/compass.png" type="image/x-icon">
 <style type="text/css">
@@ -60,20 +61,21 @@ color: white;
 <script src="lib/xtermjs/xterm.js"></script>
 <script src="lib/localForage/localForage.js"></script>
 </head>
-<body data-new-gr-c-s-check-loaded="14.1127.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1127.0"><div class="row">
+<body>
+  <div class="row">
 <div class="column">
 <p class="statusbar" id="save_time"></p>
-<script src="startup.js" defer=""></script>
-<script src="buttons.js" defer=""></script>
+<script src="startup.js" defer></script>
+<script src="buttons.js" defer></script>
 <div style="text-align: left"><a href="https://roppers.org"><img src="https://raw.githubusercontent.com/hoppersroppers/hoppersroppers.github.io/master/_layouts/whitecompass.png" width="40"></a>     <h1 style="display:inline;"> Roppers Shell in a Browser </h1>
-<p id="waiting_text" style="display: none;">
+<p id="waiting_text">
  Waiting for boot to complete, please wait . . . <br>
 </p>
-<div id="screen_container" style="display: none;">
-    <div style="white-space: pre; font: 14px / 14px monospace; display: block;"><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">pci 0000:00:12.0: vgaarb: setting as boot VGA device                            </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">pci 0000:00:12.0: vgaarb: bridge control possible                               </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">pci 0000:00:12.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=non</span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">e                                                                               </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">vgaarb: loaded                                                                  </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">clocksource: Switched to clocksource tsc-early                                  </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">pnp: PnP ACPI: disabled                                                         </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">NET: Registered PF_INET protocol family                                         </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">IP idents hash table entries: 4096 (order: 3, 32768 bytes, linear)              </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear) </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)        </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">TCP established hash table entries: 2048 (order: 1, 8192 bytes, linear)         </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">TCP bind hash table entries: 2048 (order: 3, 32768 bytes, linear)               </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">TCP: Hash tables configured (established 2048 bind 2048)                        </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">UDP hash table entries: 256 (order: 1, 8192 bytes, linear)                      </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)                 </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">NET: Registered PF_UNIX/PF_LOCAL protocol family                                </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">pci_bus 0000:00: resource 4 [io  0x0000-0xffff]                                 </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">pci_bus 0000:00: resource 5 [mem 0x00000000-0xffffffff]                         </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">pci 0000:00:01.0: PIIX3: Enabling Passive Release                               </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">pci 0000:00:00.0: Limiting direct PCI/PCI transfers                             </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">pci 0000:00:01.0: Activating ISA DMA hang workarounds                           </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">PCI: CLS 0 bytes, default 32                                                    </span></div><div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_n</span></div><div><div style="position: absolute; background-color: rgb(204, 204, 204); width: 7px; display: inline; height: 1px; margin-top: 13px;"></div><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">s</span><span style="background-color: rgb(0, 0, 0); color: rgb(168, 168, 168);">: 881590591483 ns                                                              </span></div></div>
-    <canvas id="vga" style="display: none; image-rendering: pixelated; width: 0px; height: 0px;" onclick="emulator.lock_mouse()"></canvas>
+<div id="screen_container" >
+<div style="white-space: pre; font: 14px monospace; line-height: 14px"></div>
+<canvas id="vga" style="display: none" onclick="emulator.lock_mouse()"></canvas>
 </div>
-<div id="terminal" style="display: block;"><div dir="ltr" class="terminal xterm" tabindex="0"><div class="xterm-viewport" style="background-color: rgb(0, 0, 0);"><div class="xterm-scroll-area" style="height: 681px;"></div></div><div class="xterm-screen" style="width: 704px; height: 442px;"><div class="xterm-helpers"><textarea class="xterm-helper-textarea" aria-label="Terminal input" aria-multiline="false" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="left: 332px; top: 161.412px; width: 20px; height: 20px; line-height: 18px; z-index: 1000;"></textarea><span class="xterm-char-measure-element" aria-hidden="true" style="font-family: courier-new, courier, monospace; font-size: 15px;">W</span><div class="composition-view"></div></div><canvas class="xterm-text-layer" style="z-index: 0; width: 704px; height: 442px;" width="880" height="552"></canvas><canvas class="xterm-selection-layer" style="z-index: 1; width: 704px; height: 442px;" width="880" height="552"></canvas><canvas class="xterm-link-layer" style="z-index: 2; width: 704px; height: 442px;" width="880" height="552"></canvas><canvas class="xterm-cursor-layer" style="z-index: 3; width: 704px; height: 442px;" width="880" height="552"></canvas></div></div></div>
+<div id="terminal"> </div>
 </div><p id="waiting_text">
 </p>
 </div>
@@ -130,32 +132,33 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-<img class="fluff" id="toggle" src="icon/toolbox.png" onclick="toggleToolbox()" width="25px" height="25px">
-<div id="toolbox_div" class="toolbox" style="display: none;">
-<button id="save_restore" onclick="saveRestore()" fdprocessedid="x4lf7h">save current point</button>
-<button id="fullscreen" onclick="fullscreen()" fdprocessedid="5lwftp">fullscreen</button>
-<button id="screenButton" onclick="toggleScreen()" fdprocessedid="0wimh">show screen</button>
-<button id="pause_button" onclick="startStop()" fdprocessedid="yq4y5">pause</button>
-<button onclick="saveToFile()" fdprocessedid="m1icap">save to file</button>
+<img class="fluff" id="toggle" src="icon/toolbox.png" onclick="toggleToolbox()" width="25px" height="25px"></img>
+<div id="toolbox_div" class="toolbox">
+<button id="save_restore" onclick="saveRestore()">save current point</button>
+<button id="fullscreen" onclick="fullscreen()">fullscreen</button>
+<button id="screenButton" onClick="toggleScreen()"> hide screen </button>
+<button id="pause_button" onclick="startStop()">pause</button>
+<button onclick="saveToFile()">save to file</button>
 <label>
 <hr>
 Send files to emulator
-<input id="upload_files" type="file" multiple="">
-<p>Upload Path: </p><input type="text" value="/user" id="upload_path" fdprocessedid="4eiqye">
+<input id="upload_files" type="file" multiple>
+<p>Upload Path: </p><input type="text" value="/user" id="upload_path">
 <hr>
 <label>
 Restore from file: <input id="restore_file" type="file">
 </label>
 <hr>
-<p>web proxy</p><input type="test" value="wss://relay.widgetry.org/" id="proxy_setting" fdprocessedid="ig1sbh"><button onclick="setProxyFromSettings()" fdprocessedid="u890k4">save and reload</button>
+<p>web proxy</p><input type="test" value="wss://relay.widgetry.org/" id="proxy_setting"><button onclick="setProxyFromSettings()">save and reload</button>
 <hr>
-<button id="clear_save" onclick="delete_data()" fdprocessedid="hn4ghh">delete saved data</button>
-<button id="autosave_toggle" onclick="toggle_autosave()" fdprocessedid="zryt4c">enable autosave</button>
-<button id="save" onclick="startAutosave()" fdprocessedid="1qjb5s">save now</button>
+<button id="clear_save" onclick="delete_data()">delete saved data</button>
+<button id="autosave_toggle" onclick="toggle_autosave()">enable autosave</button>
+<button id="save" onclick="startAutosave()">save now</button>
 <p id="storage_error" style="display: none">Persistence has been disabled due to a web storage error</p>
 <p id="save_time"></p>
-</label></div>
-<p class="fluff" id="boot_time">14.7</p>
+</div>
+</div>
+<p class="fluff" id="boot_time"></p>
 <a class="fluff" href="https://github.com/Darin755/browser-linux">Github</a>
 <a href="javascript.html" rel="jslicense">licenses</a>
 </div>
